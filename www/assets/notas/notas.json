@@ -1,0 +1,16 @@
+{
+    "Notas": [
+        {
+            "fecha": "\/Date(1483599600)\/",
+            "nota": "Hola mundo"
+        },
+        {
+            "fecha": "\/Date(1496646000)\/",
+            "nota": "Hola mundo2"
+        },
+        {
+            "fecha": "\/Date(1516485600)\/",
+            "nota": "Hola mundo3"
+        }
+    ]
+}

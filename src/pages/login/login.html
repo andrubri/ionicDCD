@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>Iniciar Sesión</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="redireccionar()">
+        <ion-icon name="md-exit"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-content padding class="fondo">
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-label color="primary" floating>Email</ion-label>
+        <ion-input type="text" [(ngModel)]="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label color="primary" floating>Clave</ion-label>
+        <ion-input type="password" [(ngModel)]="clave"></ion-input>
+      </ion-item>
+      <ion-item>
+      </ion-item>
+      <button ion-button full color="primary" (click)="ingresar()">Aceptar</button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

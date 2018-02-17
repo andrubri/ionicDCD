@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Notas del Diario</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <button ion-button small color="danger" (click)="gotoNew()">Nuevo</button>
+  <ion-grid>
+    <ion-row>
+      <ion-col>Fecha Nota</ion-col>
+      <ion-col>Acciones</ion-col>
+    </ion-row>
+    <ion-row wrap *ngFor="let nota of Notas">
+      <ion-col width-25> {{ nota.fecha }}</ion-col>
+      <ion-col width-25> <button ion-button small color="danger" (click)="gotoDetails(nota)"> Ver</button></ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
